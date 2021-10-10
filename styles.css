@@ -40,12 +40,8 @@ body {
 .container {
   display: flex;
   text-align: center;
-
   flex-direction: column;
   align-items: center;
-  /* padding-top: 100px; */
-  /* padding-left: 100px; */
-  /* height: 100%; */
   justify-content: center;
 }
 
@@ -168,7 +164,6 @@ hr {
 
 .about-me {
   text-align: center;
-  /* background: black; */
   padding: 80px;
 }
 
@@ -217,13 +212,6 @@ h4,
   margin: 20px 0;
 }
 
-.about-me-image {
-  height: 600px;
-  width: 480px;
-  border-radius: 10px;
-  size: cover;
-}
-
 .image-align {
   background-image: url("images/about-me-image.jpg");
   background-size: cover;
@@ -270,7 +258,6 @@ h4,
 
 .resume-button:hover {
   background-color: #06c5acd8;
-  /* color: white; */
 }
 
 .resume-header {
@@ -397,7 +384,6 @@ h4,
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), #105ff193),
     url(images/EHPS-logo.png);
   background-size: cover;
-  background-size: cover;
   background-position: center;
 }
 
@@ -504,9 +490,86 @@ MEDIA QUERIES/RESPONSIVE DESIGN
 */
 
 @media only screen and (max-width: 1000px) {
-  /* RESUME SECTION */
+  /* NAV CARDS */
+  .banner-header {
+    font-size: 36px;
+  }
 
+  /* ABOUT ME */
+  .image-align {
+    margin-top: 10px;
+  }
+
+  /* WORK EXPERIENCE */
+
+  /* RESUME SECTION */
   .resume-button {
     padding: 15px 100px;
+  }
+  /* PROJECTS SECTION */
+  .projects-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 200px;
+  }
+
+  /* FOOTER */
+}
+
+@media only screen and (max-width: 500px) {
+  /* NAV CARDS */
+
+  /* ABOUT ME */
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-me {
+    margin: 0px;
+  }
+
+  .about-me-card {
+    width: 300px;
+    height: 500px;
+  }
+
+  .sub-text {
+    font-size: 24px;
+  }
+
+  .image-align {
+    margin-top: 20px;
+  }
+
+  /* WORK EXPERIENCE */
+  .work-experience {
+    display: none;
+  }
+
+  /* RESUME SECTION */
+  .resume-button {
+    font-size: 12px;
+    padding: 15px 40px;
+  }
+
+  /* PROJECTS SECTION */
+
+  /* FOOTER */
+  footer {
+    height: 300px;
+  }
+
+  .social-icons {
+    width: 100px;
+    height: 100px;
+  }
+  .contact {
+    font-size: 24px;
+  }
+
+  .email {
+    font-size: 18px;
   }
 }

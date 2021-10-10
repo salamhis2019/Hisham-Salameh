@@ -1,0 +1,18 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f6f6f6;
+}
+
+.resume {
+  width: 50%;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background: white;
+}
