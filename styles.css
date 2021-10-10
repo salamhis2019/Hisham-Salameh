@@ -242,12 +242,13 @@ h4,
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .resume-content {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   box-sizing: border-box;
   background-color: #f6f8ff;
@@ -263,7 +264,7 @@ h4,
   text-decoration: none;
   color: black;
   background-color: #41ead4;
-  padding: 20px 200px;
+  padding: 20px 250px;
   border-radius: 15px;
   transition: 0.3s;
 }
@@ -517,6 +518,10 @@ MEDIA QUERIES/RESPONSIVE DESIGN
   /* RESUME SECTION */
   .resume-button {
     padding: 15px 100px;
+  }
+
+  .resume-content {
+    display: flex;
   }
   /* PROJECTS SECTION */
   .projects-card {
