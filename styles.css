@@ -213,8 +213,14 @@ h4,
 }
 
 .image-align {
-  background-image: url("images/about-me-image.jpg");
+  background-image: url(images/about-me-image.jpg);
   background-size: cover;
+}
+
+@media only screen and (min-width: 500px) {
+  .image-edit {
+    display: none;
+  }
 }
 
 /* 
@@ -540,6 +546,7 @@ MEDIA QUERIES/RESPONSIVE DESIGN
     width: 300px;
     height: 900px;
     padding: 15px;
+    margin-bottom: 10px;
   }
 
   p.about-text {
@@ -551,8 +558,13 @@ MEDIA QUERIES/RESPONSIVE DESIGN
     font-size: 24px;
   }
 
+  .image-edit {
+    width: 270px;
+    border-radius: 15px;
+  }
+
   .image-align {
-    display: none;
+    height: 390px;
   }
 
   /* WORK EXPERIENCE */
