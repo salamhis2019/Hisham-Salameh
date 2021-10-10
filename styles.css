@@ -1,0 +1,512 @@
+/* HEX CODES:
+Pink: #FF206E 
+Dark: #343434
+Teal: #41EAD4
+Yellow: #FBFF12*/
+
+/* ****GLOBAL EDITS**** */
+
+* {
+  padding: 0;
+  margin: 0;
+  color: #f6f8ff;
+  font-family: "Source Code Pro", monospace;
+}
+
+body {
+  background: radial-gradient(ellipse at bottom, #080808 0%, #030005);
+}
+
+/* 
+
+**** BANNER CSS **** 
+
+*/
+
+.name {
+  font-size: 60px;
+  font-weight: 600px;
+}
+
+.sub-heading {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.continue a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: 100px; */
+  /* padding-left: 100px; */
+  /* height: 100%; */
+  justify-content: center;
+}
+
+.arrow {
+  height: 70px;
+  width: 75px;
+}
+
+/* ****PARALLAX BACKGROUND**** */
+
+.hero-container {
+  height: 600px;
+  /* width: 100%; */
+  background: radial-gradient(ellipse at bottom, #080808 0%, #030005);
+}
+/*
+
+****** NAVIGATION SECTION ******
+
+*/
+
+.banner {
+  display: flex;
+  background: radial-gradient(ellipse at bottom, #080808 0%, #030005);
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner-header {
+  margin: 20px 0;
+}
+
+.banner-content {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.banner-header {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px;
+  background-color: #f6f8ff;
+}
+
+.navigation-card {
+  padding: 10px;
+  background-color: black;
+  width: 300px;
+  height: 500px;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.subtext {
+  font-weight: 200;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.project-image {
+  margin-top: 25px;
+  width: 250px;
+}
+
+hr {
+  margin: 30px 20px;
+}
+
+.project-link {
+  background-color: rgba(255, 255, 255, 0.116);
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.card-image {
+  width: 250px;
+}
+
+/* 
+
+***About me***
+
+*/
+
+.about-me {
+  text-align: center;
+  /* background: black; */
+  padding: 80px;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-card {
+  background: #f6f8ff;
+  height: 800px;
+  width: 600px;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.about-me-align {
+  padding: 30px;
+}
+
+p.about-text {
+  margin: 35px 0;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+h4,
+.about-text {
+  color: black;
+}
+
+.sub-text {
+  color: black;
+  font-size: 36px;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.about-me-image {
+  height: 600px;
+  width: 480px;
+  border-radius: 10px;
+  size: cover;
+}
+
+.image-align {
+  background-image: url("images/about-me-image.jpg");
+  background-size: cover;
+}
+
+/* 
+
+
+*** RESUME SECTION ***
+
+
+*/
+
+.resume {
+  padding: 80px;
+}
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.resume-content {
+  box-sizing: border-box;
+  background-color: #f6f8ff;
+  width: 1220px;
+  margin: 0 10px;
+  border-radius: 15px;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.resume-button {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  background-color: #41ead4;
+  padding: 20px 200px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.resume-button:hover {
+  background-color: #06c5acd8;
+  /* color: white; */
+}
+
+.resume-header {
+  color: black;
+  margin-bottom: 50px;
+}
+
+/* 
+
+
+*** WORK EXPERIENCE ***
+
+
+*/
+
+.work-experience {
+  padding: 80px;
+}
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.work-content {
+  box-sizing: border-box;
+  background-color: #f6f8ff;
+  width: 1220px;
+  margin: 0 10px;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.work-content .work-text {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.work-date {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.work-description {
+  margin-left: 40px;
+}
+
+.work-description li {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+.job-wrap {
+  margin: 15px;
+}
+
+.work-icon {
+  width: 225px;
+  height: 225px;
+  margin-left: 10px;
+}
+
+/* 
+
+
+**** PROJECTS SECTION ****
+
+
+*/
+
+.projects-section {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.projects-space {
+  box-sizing: border-box;
+  background-color: #f6f8ff;
+  border-radius: 15px;
+  width: 1220px;
+  padding: 70px 30px;
+}
+
+.projects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-title {
+  color: #f6f8ff;
+  margin-bottom: 30px;
+}
+
+.projects-card {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  background-color: black;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), #105ff193),
+    url(images/EHPS-logo.png);
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.116);
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.project-icon {
+  width: 75%;
+}
+
+.teal {
+  font-weight: 600;
+  color: #41ead4;
+}
+
+.pink {
+  font-weight: 600;
+  color: #ff206e;
+}
+
+.yellow {
+  color: #fbff12;
+  font-weight: 600;
+}
+
+.BKC-background {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), #b1131393),
+    url(images/bkc-logo.png);
+  background-size: cover;
+}
+
+.warriors-background {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), #ff910093),
+    url(images/warriors-logo.png);
+  background-size: cover;
+}
+
+.weather-background {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), #0479ff93),
+    url(images/weather.png);
+  background-size: cover;
+}
+
+/* 
+
+
+****** FOOTER ******
+
+
+*/
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 500px;
+  padding: 80px;
+}
+
+footer h1 {
+  margin: 30px 0;
+  font-size: 70px;
+}
+
+footer p {
+  font-size: 24px;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.social-icons {
+  cursor: pointer;
+}
+
+/* 
+
+
+MEDIA QUERIES/RESPONSIVE DESIGN
+
+
+*/
+
+@media only screen and (max-width: 1000px) {
+  /* RESUME SECTION */
+
+  .resume-button {
+    padding: 15px 100px;
+  }
+}
