@@ -227,16 +227,22 @@ h4,
 
 .resume {
   padding: 80px;
+  display: flex;
+  flex-direction: column;
 }
 
 .resume-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  box-sizing: border-box;
   /* align-items: center; */
 }
 
 .resume-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   box-sizing: border-box;
   background-color: #f6f8ff;
   width: 1220px;
@@ -532,7 +538,13 @@ MEDIA QUERIES/RESPONSIVE DESIGN
 
   .about-me-card {
     width: 300px;
-    height: 500px;
+    height: 900px;
+    padding: 15px;
+  }
+
+  p.about-text {
+    width: 270px;
+    font-size: 15px;
   }
 
   .sub-text {
@@ -540,7 +552,7 @@ MEDIA QUERIES/RESPONSIVE DESIGN
   }
 
   .image-align {
-    margin-top: 20px;
+    display: none;
   }
 
   /* WORK EXPERIENCE */
@@ -552,9 +564,13 @@ MEDIA QUERIES/RESPONSIVE DESIGN
   .resume-button {
     font-size: 12px;
     padding: 15px 40px;
+    width: 200px;
   }
 
   /* PROJECTS SECTION */
+  .projects-card {
+    width: 260px;
+  }
 
   /* FOOTER */
   footer {
