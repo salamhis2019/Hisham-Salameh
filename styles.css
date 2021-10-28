@@ -576,6 +576,9 @@ MEDIA QUERIES/RESPONSIVE DESIGN
   .work-experience {
     display: none;
   }
+  .work-mobile {
+    display: none;
+  }
 
   /* RESUME SECTION */
   .resume-button {
